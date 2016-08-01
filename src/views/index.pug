@@ -1,0 +1,52 @@
+extends ./layout.pug
+block content
+	//-Section headers
+	.app--section--header
+		.grid-33
+			.app--section--heading
+				h2="Timeline"
+		.grid-33
+			.app--section--heading
+				strong="129"
+				h2="Following"
+		.grid-33
+			.app--section--heading
+				h2="Direct Messages"
+
+	//-Sections
+
+	//-Timeline
+	.grid-33
+		.app--section
+			include ./partials/_tweet-list.pug
+
+	//-Following
+	.grid-33
+		.app--section
+			include ./partials/_following.pug
+	//-DMs	
+	.grid-33
+		.app--section
+			include ./partials/_dms.pug
+
+	//-Footer
+	//-Form to post Tweet
+	.app--tweet
+		form
+			.circle--fluid
+				.circle--fluid--cell.circle--fluid--primary.align-bottom.app--tweet--post
+					.app--avatar(style="background-image: url(static/images/m-spore.png)")
+						img(src="static/images/m-spore.png")
+					textarea.circle--textarea--input#tweet-textarea(placeholder="What's happening?")
+					strong.app--tweet--char#tweet-char="140"
+				.circle--fluid--cell.align-bottom
+					button.button-primary="Tweet"
+
+
+
+
+
+
+
+
+

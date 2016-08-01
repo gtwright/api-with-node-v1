@@ -1,0 +1,26 @@
+{
+  "name": "api-with-node-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app.js",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta4",
+    "twitter-node-client": "^0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtwright/api-with-node-v1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gtwright/api-with-node-v1/issues"
+  },
+  "homepage": "https://github.com/gtwright/api-with-node-v1#readme"
+}
